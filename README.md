@@ -28,4 +28,5 @@ This project implements a **comprehensive Image Analysis API** to demonstrate th
 *   Combine text prompts with visual content for intelligent, context-aware responses.
 
 The application exposes four REST endpoints that accept images in different formats along with text prompts, sends them to Gemini for multimodal analysis, and returns AI-generated insights about the visual content.
+
 ---
