@@ -6,7 +6,7 @@ This repository demonstrates how to build a comprehensive multimodal AI image an
 👉 [Spring AI Image Analysis: Building Powerful Multimodal LLM APIs](https://bootcamptoprod.com/spring-ai-image-analysis-guide/)
 
 🎥 **Visual Learning**: Prefer video tutorials? Watch our step-by-step implementation guide on YouTube.<br>
-👉 YouTube Tutorial - Coming Soon
+👉 YouTube Tutorial - [Spring AI Image Analysis: Building Powerful Multimodal LLM APIs 🔍](https://youtu.be/wbQ-4QpaEoo)
 
 ---
 
