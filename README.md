@@ -1,32 +1,53 @@
-# 🖼️ Spring AI Image Analysis: Building Powerful Multimodal LLM APIs
+🖼️ Spring AI Image Analysis: Building Powerful Multimodal LLM APIs
 
-This repository demonstrates how to build a comprehensive multimodal AI image analysis API using Spring AI and Google Gemini 2.0. The application can process images from multiple sources (file uploads, URLs, Base64, classpath) and provide intelligent insights by combining text prompts with visual analysis. This project showcases the power of multimodal AI that processes both text and images simultaneously, just like human cognition.
+This project is based on the original repository from BootcampToProd’s Spring AI Image Analysis Guide(https://github.com/BootcampToProd/spring-ai-image-analysis-cookbook)
+, which I have cloned and customized.
 
-📖 **Dive Deeper**: For a complete walkthrough, detailed explanations of multimodal AI concepts, and step-by-step instructions for building this comprehensive image analysis service, read our in-depth tutorial.<br>
-👉 [Spring AI Image Analysis: Building Powerful Multimodal LLM APIs](https://bootcamptoprod.com/spring-ai-image-analysis-guide/)
+⚙️ Environment Setup
 
-🎥 **Visual Learning**: Prefer video tutorials? Watch our step-by-step implementation guide on YouTube.<br>
-👉 YouTube Tutorial - [Spring AI Image Analysis: Building Powerful Multimodal LLM APIs 🔍](https://youtu.be/wbQ-4QpaEoo)
+Before running the application, make sure to provide the following environment variable:
 
----
+GEMINI_API_KEY → Your Google Gemini API key
+.
 
-## 📦 Environment Variables
+You can set it in your IDE or as a system environment variable.
 
-Make sure to provide this Java environment variable when running the application:
+🚀 API Endpoints
+1. Analyze Image from Files
 
-- `GEMINI_API_KEY`: Your Google Gemini API key.
+POST /api/v1/image/analysis/from-files
+Upload an image file directly from your local system.
 
----
+2. Analyze Image from URLs
 
-## 💡 About This Project
+POST /api/v1/image/analysis/from-urls
+Provide an image URL for analysis.
+You can use this test image: Sample Image URL
 
-This project implements a **comprehensive Image Analysis API** to demonstrate the power of multimodal AI with Spring AI. It showcases how to:
+3. Analyze Image from Base64
 
-*   Process images from 4 different input sources: classpath resources, file uploads, web URLs, and Base64 strings.
-*   Configure Spring AI to work with Google's Gemini 2.0 Flash through OpenAI-compatible endpoints.
-*   Build REST API with proper error handling and validation.
-*   Combine text prompts with visual content for intelligent, context-aware responses.
+POST /api/v1/image/analysis/from-base64
+Send the image encoded in Base64 format.
+You can generate Base64 images here: https://www.base64-image.de/
 
-The application exposes four REST endpoints that accept images in different formats along with text prompts, sends them to Gemini for multimodal analysis, and returns AI-generated insights about the visual content.
+4. Analyze Image from Classpath
 
----
+POST /api/v1/image/analysis/from-classpath
+Use an image stored in the project’s resources/images folder.
+Example file: Spring-AI-Chat-Client-Metrics.jpg
+
+🧠 About
+
+This project demonstrates how to integrate Spring AI with Google Gemini to create a multimodal image analysis API.
+It supports file uploads, URLs, Base64 data, and classpath resources for image input.
+
+
+
+
+
+
+
+
+
+
+
