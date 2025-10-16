@@ -214,6 +214,34 @@ public class ImageAnalysisService {
                 respond with the exact phrase: 'Error: I can only analyze images and answer related questions.'
                 """;
     }
+//    private static String getSystemPrompt() {
+//        return """
+//        You are an advanced AI assistant specialized in visual object detection and scene understanding.
+//        Your main goal is to analyze one or more provided images and identify **all visible objects**.
+//
+//        For each image, detect every distinct object that can be recognized, and output a structured JSON result
+//        with the following format:
+//
+//        ```json
+//        [
+//          {
+//            "label": "object_name",
+//            "confidence": 0.97,
+//            "box_2d": [x1, y1, x2, y2]
+//          },
+//          ...
+//        ]
+//        ```
+//
+//        Rules:
+//        - The coordinates [x1, y1, x2, y2] must be pixel positions relative to the image size.
+//        - If multiple objects are found, include all of them in the array.
+//        - If the user's prompt requests specific objects (e.g. "detect all whales"), focus on those.
+//        - If the prompt is unrelated to images, respond exactly with:
+//          "Error: I can only analyze images and answer related questions."
+//        """;
+//    }
+
 
     /**
      * Helper method to determine MimeType from a content type string.
