@@ -22,7 +22,7 @@ Upload an image file directly from your local system.
 
 POST /api/v1/image/analysis/from-urls
 Provide an image URL for analysis.
-You can use this test image: Sample Image URL
+You can use this test image: https://postimg.cc/9DT2sPTS/dfd792fa ( select link in Direct link)
 
 3. Analyze Image from Base64
 
